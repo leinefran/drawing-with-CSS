@@ -85,3 +85,64 @@ body {
     left: 5px;
     box-shadow: 1px 1px 3px #888787;
 }
+
+.eye2 {
+    width: 70px;
+    height: 70px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    box-shadow: 1px 1px 1px #888787;
+}
+
+.pupil2 {
+    width: 30px;
+    height: 30px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 27px;
+    left: 10px;
+}
+
+/*
+ * The Mouth and Brow
+ * Used border to create both, removing unwanted part using clip-path property.
+ */
+
+.mouth1 {
+    width: 120px;
+    height: 81px;
+    border: 15px solid #71acc8;
+    border-radius: 42% 17% 70% 44% / 32% 26% 80% 73%;
+    position: absolute;
+    top: 46px;
+    left: -60px;
+    clip-path: polygon(0 33%, 100% 11%, 99% 100%, 0% 100%);
+}
+
+.mouth2 {
+    width: 144px;
+    height: 81px;
+    border: 15px solid #71acc8;
+    border-radius: 42% 17% 70% 44% / 32% 26% 80% 73%;
+    position: absolute;
+    top: -6px;
+    left: -78px;
+    clip-path: polygon(0 83%, 100% 56%, 99% 100%, 0% 100%);
+}
+
+.brow {
+    width: 150px;
+    height: 51px;
+    border: 25px solid #d70000;
+    border-radius: 32% 43% 39% 52% / 28% 21% 86% 72%;
+    position: absolute;
+    top: -107px;
+    left: -91px;
+    clip-path: polygon(0 54%, 100% 39%, 99% 100%, 0% 100%);
+    transform: rotate(196deg);
+}
+
