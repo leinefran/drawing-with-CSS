@@ -146,3 +146,75 @@ body {
     transform: rotate(196deg);
 }
 
+/* Working on the detail by creating mask to create curve on the eyebrow and mouth where the border line has been cut off. */
+
+.brow-mask1 {
+    width: 28px;
+    height: 23px;
+    background: #d70000;
+    border-radius: 50%;
+    position: absolute;
+    top: -84px;
+    left: -88px;
+}
+
+.brow-mask2 {
+    width: 27px;
+    height: 17px;
+    background: #d70000;
+    border-radius: 50%;
+    position: absolute;
+    top: -46px;
+    left: 75px;
+    transform: rotate(13deg);
+}
+
+.mouth-mask1 {
+    width: 22px;
+    height: 22px;
+    background: #71acc8;
+    border-radius: 50%;
+    position: absolute;
+    top: 75px;
+    left: -60px;
+}
+
+.mouth-mask2 {
+    width: 22px;
+    height: 22px;
+    background: #71acc8;
+    border-radius: 50%;
+    position: absolute;
+    top: 53px;
+    left: 66px;
+}
+
+/*
+ * The Handle
+ * Created with a simple rectangle, than masked with two curved rectangles with the same color as the background, one on each side.
+ */
+
+.handle {
+    width: 80px;
+    height: 100px;
+    background: #f0f0f0;
+    position: absolute;
+    top: 171px;
+    left: -32px;
+}
+
+.handle-mask1, .handle-mask2  {
+    border-radius: 87% 13% 100% 0% / 0% 100% 0% 100%;
+    width: 100px;
+    height: 100px;
+    background: rgb(95, 177, 255);
+    position: absolute;
+    top: 183px;
+    left: -122px;
+}
+
+.handle-mask2 {
+    left: 38px;
+    transform: rotateY(180deg);
+    top: 178px;
+}
